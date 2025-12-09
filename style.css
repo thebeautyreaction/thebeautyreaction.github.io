@@ -35,8 +35,9 @@ body {
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
+    align-items: flex-start; /* podigni sve gore */
+    padding: 0 40px;
+    margin-top: 0;
 }
 
 /* VIDEO WRAPPER */
@@ -44,7 +45,10 @@ body {
     width: 45%;
     overflow: hidden;
 
-    /* OVO PRAVI TAČNO ONO ŠTO SI TRAŽILA */
+    /* SPOJENO SA GORNJOM TRAKOM */
+    margin-top: 0;
+
+    /* DONJI DEO ZAOBLJEN – GORNJI RAVAN */
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 220px;
@@ -55,12 +59,14 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    margin: 0;
 }
 
 /* RIGHT TEXT */
 .hero-text {
     width: 45%;
     text-align: center;
+    margin-top: -90px; /* PODIGNUTO ~3cm */
 }
 
 .hero-title {
