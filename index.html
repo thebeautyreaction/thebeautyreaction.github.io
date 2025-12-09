@@ -6,9 +6,6 @@
   <title>The Beauty Reaction — Every brand has a reaction</title>
   <meta name="description" content="The Beauty Reaction — luxury science-led branding and marketing for beauty & cosmetics. Every brand has a reaction. I engineer yours." />
 
-  <!-- Fonts: if you don't have Black Mango / Sukar locally, use fallbacks.
-       Consider self-hosting or adding links to Google Fonts if available.
-       For now we reference the families requested with sensible fallbacks. -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -19,6 +16,7 @@
   <header class="navbar" role="banner">
     <div class="nav-inner">
       <a class="brand" href="index.html">The Beauty Reaction</a>
+
       <nav class="main-nav" role="navigation" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="vision.html">Vision</a>
@@ -29,25 +27,18 @@
     </div>
   </header>
 
-  <!-- VIDEO -->
-        <div class="hero-video-wrapper">
-            <video src="Untitled video (1).mp4" autoplay muted loop playsinline></video>
-        </div>
-
   <!-- HERO -->
   <main>
     <section class="hero" id="home" aria-label="Hero">
-      <!-- video wrapper: gornji deo ravan (tako stoji na navbar), donji zaobljen -->
+
+      <!-- VIDEO WRAPPER — sa tačnim nazivom -->
       <div class="hero-video-wrapper" aria-hidden="true">
-        <!-- IMPORTANT: filename must exactly match file in repo -->
-        <!-- Your file: "Untitled video (1).mp4" - kept intentionally exact -->
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg">
-          <source src="Untitled video (1).mp4" type="video/mp4">
-          <!-- fallback -->
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="Untitled design (1).mp4" type="video/mp4">
         </video>
       </div>
 
-      <!-- hero text (desno) -->
+      <!-- TEXT -->
       <div class="hero-text">
         <h1 class="hero-title">EVERY BRAND HAS A REACTION. I ENGINEER YOURS.</h1>
 
@@ -60,7 +51,7 @@
       </div>
     </section>
 
-    <!-- THREE PILLARS / quick features -->
+    <!-- THREE PILLARS -->
     <section class="pillars-section" aria-label="Three pillars">
       <div class="wrap">
         <h2 class="pillars-title">Three Pillars</h2>
@@ -84,7 +75,7 @@
       </div>
     </section>
 
-    <!-- Services preview -->
+    <!-- Services PREVIEW -->
     <section class="services-preview">
       <div class="wrap">
         <h2 class="section-title">What I do</h2>
@@ -105,13 +96,13 @@
       </div>
     </section>
 
-    <!-- Blog preview -->
+    <!-- BLOG PREVIEW -->
     <section class="blog-preview">
       <div class="wrap">
         <h2 class="section-title">Insights & Inspiration</h2>
         <div class="blog-grid">
           <article class="blog-card">
-            <div class="blog-thumb" aria-hidden="true"></div>
+            <div class="blog-thumb"></div>
             <div class="blog-body">
               <span class="blog-cat">SEO Strategy</span>
               <h3>The Algorithm of Beauty: SEO for Cosmetic Brands</h3>
@@ -121,7 +112,7 @@
           </article>
 
           <article class="blog-card">
-            <div class="blog-thumb" aria-hidden="true"></div>
+            <div class="blog-thumb"></div>
             <div class="blog-body">
               <span class="blog-cat">Branding</span>
               <h3>Chemistry of Connection: Building Authentic Brand Identity</h3>
@@ -131,7 +122,7 @@
           </article>
 
           <article class="blog-card">
-            <div class="blog-thumb" aria-hidden="true"></div>
+            <div class="blog-thumb"></div>
             <div class="blog-body">
               <span class="blog-cat">Storytelling</span>
               <h3>From Formula to Narrative: The Art of Beauty Storytelling</h3>
@@ -152,8 +143,8 @@
   </footer>
 
 <script>
-  // small helper
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
