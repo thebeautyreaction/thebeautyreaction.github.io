@@ -1,36 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Beauty Reaction — Vision</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision - The Beauty Reaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .vision-page {
+            padding: 80px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .vision-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #400128;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .vision-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(64, 1, 40, 0.1);
+        }
+        
+        .vision-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            color: #400128;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #400128;
+            color: #cbbca6;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background-color: #cbbca6;
+            color: #400128;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-  <header style="padding:24px 5%;background:#400128;color:#ececec;">
-    <div style="max-width:1100px;margin:0 auto;font-weight:700;font-family:Inter, Arial, sans-serif;">
-      <a href="index.html" style="color:#ececec;text-decoration:none;font-size:20px;">← Back to home</a>
-    </div>
-  </header>
-
-  <main style="min-height:70vh;display:flex;align-items:center;justify-content:center;padding:48px 5%;background:#fff;">
-    <div style="max-width:1000px;text-align:center;">
-      <h1 style="font-family:'Playfair Display', serif;color:#400128;font-size:40px;margin-bottom:18px;">Vision</h1>
-      <p style="color:#400128;opacity:0.9;font-size:18px;line-height:1.7;">
-        This page is a placeholder for the full Vision statement. We'll design it properly soon — for now, the page exists and is live so the "Explore the vision" CTA works.
-      </p>
-      <p style="margin-top:22px;">
-        <a href="index.html" style="display:inline-block;padding:12px 20px;border-radius:10px;background:#cbbca6;color:#400128;text-decoration:none;font-weight:600;">
-          Back to home
-        </a>
-      </p>
-    </div>
-  </main>
-
-  <footer style="padding:28px 5%;text-align:center;color:#400128;">
-    © <span id="yr"></span> The Beauty Reaction
-  </footer>
-
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">The Beauty Reaction</div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vision.html" class="nav-link">Vision</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="vision-page">
+        <h1 class="vision-title">Vision</h1>
+        
+        <div class="vision-content">
+            <p class="vision-text">
+                At The Beauty Reaction, we believe every brand possesses a unique chemical signature—a reaction waiting to be engineered. Our vision is to transform cosmetic marketing from transactional messaging to emotional catalysis.
+            </p>
+            
+            <p class="vision-text">
+                We see a world where beauty brands communicate with scientific precision and artistic soul. Where SEO is not just about keywords, but about building authority. Where storytelling is not just narrative, but psychological architecture. Where strategy is not just planning, but intentional communication design.
+            </p>
+            
+            <p class="vision-text">
+                Our approach merges the laboratory with the studio—data with desire, formulation with feeling, science with storytelling. We engineer reactions that resonate, convert, and endure.
+            </p>
+            
+            <div style="text-align: center;">
+                <a href="index.html" class="back-button">Back to Home</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-text">
+            © <span id="vision-year"></span> The Beauty Reaction — Crafted with science & storytelling.
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('vision-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
