@@ -1,22 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About - The Beauty Reaction</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Beauty Reaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page {
+            padding: 80px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #400128;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(64, 1, 40, 0.1);
+        }
+        
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            color: #400128;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .about-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            color: #400128;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .philosophy-points {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        .philosophy-points li {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: #400128;
+            padding: 10px 0;
+            position: relative;
+        }
+        
+        .philosophy-points li::before {
+            content: '→';
+            position: absolute;
+            left: -25px;
+            color: #cbbca6;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #400128;
+            color: #cbbca6;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background-color: #cbbca6;
+            color: #400128;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-<header>
-  <h1>About</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-</header>
-<section>
-  <h2>O meni</h2>
-  <p>Ovde dodaješ svoju biografiju.</p>
-</section>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">The Beauty Reaction</div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vision.html" class="nav-link">Vision</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="about-page">
+        <h1 class="about-title">About The Beauty Reaction</h1>
+        
+        <div class="about-content">
+            <div class="about-section">
+                <h2 class="section-title">The Alchemy of Brand & Science</h2>
+                <p class="about-text">
+                    The Beauty Reaction was founded on a fundamental principle: every brand—like every chemical compound—has a unique reaction waiting to be engineered. We are not just marketers; we are reaction engineers.
+                </p>
+                <p class="about-text">
+                    With roots in cosmetic science and branches in psychology, data analysis, and narrative design, we approach beauty branding as both an art and a science. We understand that behind every successful beauty brand is a perfect reaction between formulation and feeling, data and desire.
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h2 class="section-title">Our Philosophy</h2>
+                <ul class="philosophy-points">
+                    <li>Every ingredient tells a story worth telling</li>
+                    <li>Data informs, but emotion converts</li>
+                    <li>Authority is built, not bought</li>
+                    <li>Precision in communication creates impact</li>
+                    <li>Science and storytelling are not opposites—they are partners</li>
+                </ul>
+            </div>
+            
+            <div class="about-section">
+                <h2 class="section-title">Why We're Different</h2>
+                <p class="about-text">
+                    Unlike traditional beauty marketing agencies, we don't just create campaigns—we engineer reactions. We analyze the chemical composition of your brand (your values, your ingredients, your audience) and design communication strategies that create the desired reaction in your market.
+                </p>
+                <p class="about-text">
+                    We speak the language of both the laboratory and the luxury boutique. We understand pH levels and psychological triggers. We appreciate molecular structures and market structures. This unique dual perspective allows us to create branding that is both scientifically sound and emotionally compelling.
+                </p>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="index.html" class="back-button">Back to Home</a>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-text">
+            © <span id="about-year"></span> The Beauty Reaction — Crafted with science & storytelling.
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('about-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
