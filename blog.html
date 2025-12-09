@@ -1,22 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Blog - The Beauty Reaction</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-  <h1>Blog</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-</header>
-<section>
-  <h2>Blog postovi</h2>
-  <p>Ovde će automatski stajati tvoji GitHub Pages blog postovi (ručno dodati).</p>
-</section>
-</body>
-</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Beauty Reaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-page {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .blog-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #400128;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .blog-post {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(64, 1, 40, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        
+        .post-image {
+            height: 200px;
+            background-color: #400128;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #cbbca6;
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .post-content {
+            padding: 30px;
+        }
+        
+        .post-category {
+            display: inline-block;
+            background-color: #cbbca6;
+            color: #400128;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-family: 'Raleway',
