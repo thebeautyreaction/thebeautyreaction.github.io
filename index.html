@@ -1,103 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=80px, initial-scale=1.0">
-    <title>The Beauty Reaction — Every brand has a reaction</title>
-    <meta name="description" content="The Beauty Reaction — luxury science-led branding and marketing for beauty & cosmetics. Every brand has a reaction. I engineer yours.">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Beauty Reaction — Every brand has a reaction</title>
+  <meta name="description" content="The Beauty Reaction — luxury science-led branding and marketing for beauty & cosmetics. Every brand has a reaction. I engineer yours." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Gornja traka (header) -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">The Beauty Reaction</div>
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="vision.html" class="nav-link">Vision</a>
-                <a href="service.html" class="nav-link">Service</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-            </nav>
+
+  <!-- NAV -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">The Beauty Reaction</a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="vision.html">Vision</a>
+        <a href="services.html">Service</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="home" aria-label="Hero">
+
+      <!-- VIDEO WRAPPER — sa tačnim nazivom -->
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="Untitled design (1).mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- TEXT -->
+      <div class="hero-text">
+        <h1 class="hero-title">EVERY BRAND HAS A REACTION. I ENGINEER YOURS.</h1>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="vision.html">EXPLORE THE VISION</a>
+          <a class="btn secondary" href="services.html">SEE SERVICES</a>
         </div>
-    </header>
 
-    <!-- Glavni sadržaj -->
-    <main class="main-content">
-        <!-- Video i tekst sekcija -->
-        <section class="hero-section">
-            <!-- Video kontejner (levo) -->
-            <div class="video-container">
-                <video class="hero-video" autoplay muted loop playsinline>
-                    <source src="Untitled design (1).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            
-            <!-- Tekst i dugme (desno) -->
-            <div class="hero-text-container">
-                <h1 class="hero-title">EVERY BRAND HAS A REACTION. I ENGINEER YOURS.</h1>
-                <a href="vision.html" class="cta-button">EXPLORE THE VISION</a>
-                <p class="hero-subtitle">Where strategy becomes desire — and desire becomes authority.</p>
-            </div>
-        </section>
+        <p class="hero-sub">Where strategy becomes desire — and desire becomes authority.</p>
+      </div>
+    </section>
 
-        <!-- Three Pillars sekcija -->
-        <section class="pillars-section">
-            <h2 class="pillars-main-title">Three Pillars</h2>
-            
-            <div class="pillars-container">
-                <!-- Prvi stub -->
-                <div class="pillar">
-                    <div class="pillar-reflection left">Search</div>
-                    <div class="pillar-content">
-                        <h3 class="pillar-title">SEARCH</h3>
-                        <p class="pillar-description">SEO that builds authority, not just traffic.</p>
-                    </div>
-                    <div class="pillar-reflection right">Search</div>
-                </div>
-                
-                <!-- Drugi stub -->
-                <div class="pillar">
-                    <div class="pillar-reflection left">Story</div>
-                    <div class="pillar-content">
-                        <h3 class="pillar-title">STORY</h3>
-                        <p class="pillar-description">Narratives that elevate desire and shape perception.</p>
-                    </div>
-                    <div class="pillar-reflection right">Story</div>
-                </div>
-                
-                <!-- Treći stub -->
-                <div class="pillar">
-                    <div class="pillar-reflection left">Strategy</div>
-                    <div class="pillar-content">
-                        <h3 class="pillar-title">STRATEGY</h3>
-                        <p class="pillar-description">Communication built on precision, psychology and intention.</p>
-                    </div>
-                    <div class="pillar-reflection right">Strategy</div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- THREE PILLARS -->
+    <section class="pillars-section" aria-label="Three pillars">
+      <div class="wrap">
+        <h2 class="pillars-title">Three Pillars</h2>
 
-    <!-- Donja traka (footer) -->
-    <footer class="main-footer">
-        <div class="footer-text">
-            © 2025 The Beauty Reaction — Crafted with science & storytelling.
+        <div class="pillars">
+          <article class="pillar">
+            <h3>SEARCH</h3>
+            <p>SEO that builds authority, not just traffic. Technical audits, content strategy, and growth loops for beauty brands.</p>
+          </article>
+
+          <article class="pillar">
+            <h3>STORY</h3>
+            <p>Narratives that elevate desire and shape perception — storytelling rooted in formulation and audience psychology.</p>
+          </article>
+
+          <article class="pillar">
+            <h3>STRATEGY</h3>
+            <p>Communication built on precision, psychology and intention: positioning, messaging and activation plans.</p>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        // Dinamičko ažuriranje godine
-        document.addEventListener('DOMContentLoaded', function() {
-            const yearSpan = document.getElementById('current-year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-    </script>
+    <!-- Services PREVIEW -->
+    <section class="services-preview">
+      <div class="wrap">
+        <h2 class="section-title">What I do</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h4>SEO Strategy</h4>
+            <p>Naučno precizna, podatkovno vođena optimizacija koja povećava vidljivost.</p>
+          </div>
+          <div class="service-card">
+            <h4>Brand Storytelling</h4>
+            <p>Kopirajting sa hemijom — poruke kreirane da izazovu emotivne reakcije.</p>
+          </div>
+          <div class="service-card">
+            <h4>Copywriting for Beauty</h4>
+            <p>Specijalizovan sadržaj zasnovan na kozmetičkoj nauci i luksuznom pozicioniranju.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="blog-preview">
+      <div class="wrap">
+        <h2 class="section-title">Insights & Inspiration</h2>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-thumb"></div>
+            <div class="blog-body">
+              <span class="blog-cat">SEO Strategy</span>
+              <h3>The Algorithm of Beauty: SEO for Cosmetic Brands</h3>
+              <p>How luxury beauty brands can leverage search optimization without compromising premium positioning.</p>
+              <a class="read-more" href="blog.html">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb"></div>
+            <div class="blog-body">
+              <span class="blog-cat">Branding</span>
+              <h3>Chemistry of Connection: Building Authentic Brand Identity</h3>
+              <p>Essential elements that create lasting emotional bonds between cosmetic brands and their audiences.</p>
+              <a class="read-more" href="blog.html">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb"></div>
+            <div class="blog-body">
+              <span class="blog-cat">Storytelling</span>
+              <h3>From Formula to Narrative: The Art of Beauty Storytelling</h3>
+              <p>Learn how to transform ingredients and values into compelling narratives that resonate and convert.</p>
+              <a class="read-more" href="blog.html">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> The Beauty Reaction — Crafted with science & storytelling.</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
