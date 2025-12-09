@@ -1,131 +1,122 @@
-/* ===== GENERAL ===== */
+/* GENERAL */
 body {
     margin: 0;
     padding: 0;
-    font-family: "Didot", "Playfair Display", serif;
     background: #ececec;
+    font-family: "Cormorant Garamond", serif;
     color: #400128;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-/* ===== NAV ===== */
-header {
+/* NAVBAR */
+.navbar {
     background: #400128;
+    color: #ececec;
     padding: 20px 40px;
-}
-
-.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    color: #ececec;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+.navbar .logo {
+    font-size: 32px;
+    font-weight: 600;
 }
 
-.nav-links a {
-    color: #ececec;
-    text-decoration: none;
+.navbar nav a {
     margin-left: 25px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/* ===== HERO ===== */
-.hero {
-    text-align: center;
-    padding: 140px 20px;
-    background: #ececec;
-}
-
-.hero h1 {
-    font-size: 60px;
-    font-weight: bold;
-    color: #400128;
-}
-
-.subtitle {
-    margin-top: 15px;
-    font-size: 22px;
-    color: #c1979d;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 14px 34px;
-    background: #efd91d;
-    color: #400128;
+    color: #ececec;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
-/* ===== SECTIONS ===== */
-.section {
-    padding: 80px 20px;
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.hero-video-wrapper {
+    width: 45%;
+    border-bottom-left-radius: 200px;
+    overflow: hidden;
+}
+
+.hero-video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    width: 45%;
     text-align: center;
 }
 
-.section h2 {
-    font-size: 36px;
+.hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #cbbca6;
+    border: 3px solid #400128;
+    border-radius: 12px;
+    text-decoration: none;
     color: #400128;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* PILLARS */
+.pillars-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.pillars-title {
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
-/* ===== SERVICES GRID ===== */
-.services-grid {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 0 30px;
+.pillars {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
-.service-card {
-    background: #cbbca6;
-    padding: 30px;
-    border-radius: 14px;
-    text-align: left;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* ===== PROCESS ===== */
-.process-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 0 40px;
-}
-
-.step {
-    background: #c1979d;
-    padding: 30px;
-    border-radius: 14px;
-}
-
-.number {
-    font-size: 32px;
-    font-weight: bold;
-    color: #400128;
-}
-
-/* ===== FOOTER ===== */
-footer {
+.pillar {
     background: #400128;
     color: #ececec;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
+    padding: 40px 25px;
+    width: 220px;
+    border-radius: 20px;
+    letter-spacing: 1px;
 }
 
+.pillar h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #400128;
+    font-size: 14px;
+    margin-top: 40px;
+}
