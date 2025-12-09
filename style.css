@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ececec;
+    background: #eeedec;
     font-family: "Cormorant Garamond", serif;
     color: #400128;
 }
@@ -10,7 +10,6 @@ body {
 /* NAVBAR */
 .navbar {
     background: #400128;
-    color: #ececec;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -18,67 +17,79 @@ body {
 }
 
 .navbar .logo {
-    font-size: 32px;
-    font-weight: 600;
+    font-family: "Black Mango", serif;
+    font-size: 42px;
+    color: #cbbca6;
 }
 
 .navbar nav a {
-    margin-left: 25px;
-    color: #ececec;
+    margin-left: 30px;
+    font-family: "Sukar", sans-serif;
+    font-size: 21.6px;
+    color: #cbbca6;
     text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 /* HERO SECTION */
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 60px 40px;
 }
 
+/* VIDEO SHAPE */
 .hero-video-wrapper {
     width: 45%;
-    border-bottom-left-radius: 200px;
     overflow: hidden;
+    border-bottom-left-radius: 220px;
+    border-bottom-right-radius: 220px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
 }
 
 .hero-video-wrapper video {
     width: 100%;
-    height: auto;
     display: block;
 }
 
+/* HERO TEXT RIGHT */
 .hero-text {
     width: 45%;
     text-align: center;
 }
 
 .hero-title {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 25px;
+    font-family: "Cinzel", serif;
+    font-size: 25.3px;
+    color: #400128;
+    margin-bottom: 30px;
 }
 
+/* CTA BUTTON */
 .cta-btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 14px 34px;
     background: #cbbca6;
-    border: 3px solid #400128;
-    border-radius: 12px;
-    text-decoration: none;
     color: #400128;
-    font-weight: 600;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    border: 3px solid #400128;
+    border-radius: 18px;
+    text-decoration: none;
     letter-spacing: 1px;
-    font-size: 18px;
+    position: relative;
     margin-bottom: 20px;
 }
 
 .hero-sub {
-    font-size: 14px;
-    margin-top: 10px;
-    letter-spacing: 1px;
+    font-family: "Sukar", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    color: #400128;
 }
 
 /* PILLARS */
