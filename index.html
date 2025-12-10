@@ -1,150 +1,133 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Beauty Reaction — Every brand has a reaction</title>
-  <meta name="description" content="The Beauty Reaction — luxury science-led branding and marketing for beauty & cosmetics. Every brand has a reaction. I engineer yours." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Beauty Reaction</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your external CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="site-wrapper">
 
-  <!-- NAV -->
-  <header class="navbar" role="banner">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">The Beauty Reaction</a>
-
-      <nav class="main-nav" role="navigation" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="vision.html">Vision</a>
-        <a href="services.html">Service</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main>
-    <section class="hero" id="home" aria-label="Hero">
-
-      <!-- VIDEO WRAPPER — sa tačnim nazivom -->
-      <div class="hero-video-wrapper" aria-hidden="true">
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-          <source src="Untitled design (1).mp4" type="video/mp4">
-        </video>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="#home" class="logo" id="nav-brand">The Beauty Reaction</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <!-- TEXT -->
-      <div class="hero-text">
-        <h1 class="hero-title">EVERY BRAND HAS A REACTION. I ENGINEER YOURS.</h1>
-
-        <div class="hero-actions">
-          <a class="btn primary" href="vision.html">EXPLORE THE VISION</a>
-          <a class="btn secondary" href="services.html">SEE SERVICES</a>
-        </div>
-
-        <p class="hero-sub">Where strategy becomes desire — and desire becomes authority.</p>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 id="brand-name">The Beauty Reaction</h1>
+        <p class="tagline" id="tagline-text">Every brand has a reaction. I engineer yours.</p>
+        <p class="hero-subtitle" id="hero-subtitle">
+          Transforming cosmetic brands through strategic storytelling, refined branding, and data-driven SEO that creates lasting impressions.
+        </p>
+        <a href="#services" class="cta-button"><span id="cta-text">Discover Our Process</span></a>
       </div>
     </section>
 
-    <!-- THREE PILLARS -->
-    <section class="pillars-section" aria-label="Three pillars">
-      <div class="wrap">
-        <h2 class="pillars-title">Three Pillars</h2>
+    <!-- About -->
+    <section id="about" class="page-section">
+      <h2 class="section-title" id="about-title">The Science of Beauty Marketing</h2>
+      <div class="about-content">
+        <p id="about-description">
+          At The Beauty Reaction, we understand that every cosmetic brand has a unique chemistry...
+        </p>
+        <p>
+          We don't just market beauty—we catalyze connections...
+        </p>
+      </div>
+    </section>
 
-        <div class="pillars">
-          <article class="pillar">
-            <h3>SEARCH</h3>
-            <p>SEO that builds authority, not just traffic. Technical audits, content strategy, and growth loops for beauty brands.</p>
-          </article>
+    <!-- Services -->
+    <section id="services" class="services page-section">
+      <h2 class="section-title">Our Expertise</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>SEO Optimization</h3>
+          <p>Elevate your brand's visibility...</p>
+        </div>
 
-          <article class="pillar">
-            <h3>STORY</h3>
-            <p>Narratives that elevate desire and shape perception — storytelling rooted in formulation and audience psychology.</p>
-          </article>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Brand Development</h3>
+          <p>We create cohesive brand identities...</p>
+        </div>
 
-          <article class="pillar">
-            <h3>STRATEGY</h3>
-            <p>Communication built on precision, psychology and intention: positioning, messaging and activation plans.</p>
-          </article>
+        <div class="service-card">
+          <div class="service-icon">📖</div>
+          <h3>Strategic Storytelling</h3>
+          <p>Transform your brand narrative...</p>
         </div>
       </div>
     </section>
 
-    <!-- Services PREVIEW -->
-    <section class="services-preview">
-      <div class="wrap">
-        <h2 class="section-title">What I do</h2>
-        <div class="services-grid">
-          <div class="services-card">
-            <h4>SEO Strategy</h4>
-            <p>Naučno precizna, podatkovno vođena optimizacija koja povećava vidljivost.</p>
-          </div>
-          <div class="services-card">
-            <h4>Brand Storytelling</h4>
-            <p>Kopirajting sa hemijom — poruke kreirane da izazovu emotivne reakcije.</p>
-          </div>
-          <div class="services-card">
-            <h4>Copywriting for Beauty</h4>
-            <p>Specijalizovan sadržaj zasnovan na kozmetičkoj nauci i luksuznom pozicioniranju.</p>
+    <!-- Blog -->
+    <section id="blog" class="page-section">
+      <h2 class="section-title">Insights & Inspiration</h2>
+      <div class="blog-grid">
+
+        <div class="blog-card">
+          <div class="blog-image"></div>
+          <div class="blog-content">
+            <div class="blog-category">SEO Strategy</div>
+            <h3>The Algorithm of Beauty...</h3>
+            <p>Discover how luxury beauty brands...</p>
+            <a href="#" class="read-more">Read More</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- BLOG PREVIEW -->
-    <section class="blog-preview">
-      <div class="wrap">
-        <h2 class="section-title">Insights & Inspiration</h2>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <div class="blog-thumb"></div>
-            <div class="blog-body">
-              <span class="blog-cat">SEO Strategy</span>
-              <h3>The Algorithm of Beauty: SEO for Cosmetic Brands</h3>
-              <p>How luxury beauty brands can leverage search optimization without compromising premium positioning.</p>
-              <a class="read-more" href="blog.html">Read More →</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-thumb"></div>
-            <div class="blog-body">
-              <span class="blog-cat">Branding</span>
-              <h3>Chemistry of Connection: Building Authentic Brand Identity</h3>
-              <p>Essential elements that create lasting emotional bonds between cosmetic brands and their audiences.</p>
-              <a class="read-more" href="blog.html">Read More →</a>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-thumb"></div>
-            <div class="blog-body">
-              <span class="blog-cat">Storytelling</span>
-              <h3>From Formula to Narrative: The Art of Beauty Storytelling</h3>
-              <p>Learn how to transform ingredients and values into compelling narratives that resonate and convert.</p>
-              <a class="read-more" href="blog.html">Read More →</a>
-            </div>
-          </article>
+        <div class="blog-card">
+          <div class="blog-image"></div>
+          <div class="blog-content">
+            <div class="blog-category">Branding</div>
+            <h3>Chemistry of Connection...</h3>
+            <p>Explore the essential elements...</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
         </div>
+
+        <div class="blog-card">
+          <div class="blog-image"></div>
+          <div class="blog-content">
+            <div class="blog-category">Storytelling</div>
+            <h3>From Formula to Narrative...</h3>
+            <p>Learn how to transform your brand...</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
       </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> The Beauty Reaction — Crafted with science & storytelling.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 The Beauty Reaction. Every brand has a <span class="footer-accent">reaction</span>.</p>
+      </div>
+    </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  </div>
 
+  <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
