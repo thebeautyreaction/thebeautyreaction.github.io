@@ -478,3 +478,26 @@ html {
   background: #222;
 }
 
+/* CTA dugme u ABOUT sekciji — poravnavanje desno */
+.about-me-text .cta-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* pomera ga desno */
+  margin-top: 20px;
+}
+
+.cta-btn {
+  background: #400128;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #efd91d;
+  color: #400128;
+}
+
