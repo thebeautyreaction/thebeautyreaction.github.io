@@ -7,8 +7,9 @@ const defaultConfig = {
   font_family: 'Inter',
   font_size: 16,
   brand_name: 'The Beauty Reaction',
-  tagline: 'Every brand has a reaction. I engineer yours.',
-  hero_subtitle: 'Transforming cosmetic brands through strategic storytelling, refined branding, and data-driven SEO that creates lasting impressions.',
+  tagline: 'Every brand has a reaction. I define yours.',
+  hero_subtitle: 'I transform your brand’s truth into desire. 
+    Where chemistry meets storytelling — creating words people feel, remember, and trust.',
   cta_button: 'Discover Our Process',
   about_heading: 'The Science of Beauty Marketing',
   about_text: 'At The Beauty Reaction, we understand that every cosmetic brand has a unique chemistry...'
