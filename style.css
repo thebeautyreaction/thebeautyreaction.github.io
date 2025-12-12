@@ -245,6 +245,13 @@ section {
   }
 }
 
+.cta-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* pomera ga desno */
+  margin-top: 40px;
+}
+
 /* ---------------------------------------------------------
    SERVICES
 --------------------------------------------------------- */
