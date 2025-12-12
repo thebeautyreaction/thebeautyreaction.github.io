@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start the Reaction – Inquiry</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .request-wrapper {
+      max-width: 600px;
+      margin: 8rem auto;
+      background: white;
+      padding: 3rem;
+      border: 1px solid rgba(64,1,40,0.1);
+      box-shadow: 0 10px 40px rgba(64,1,40,0.12);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      text-align: center;
+      color: #400128;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      font-size: 1rem;
+      color: #400128;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid rgba(64,1,40,0.4);
+      margin-bottom: 1.2rem;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: #400128;
+      color: #ececec;
+      border: 2px solid #400128;
+      font-size: 1.1rem;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #efd91d;
+      color: #400128;
+      border-color: #efd91d;
+    }
+    .success-message {
+      color: #400128;
+      text-align: center;
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="request-wrapper">
+
+    <h2>Start the Reaction</h2>
+
+    <form action="https://formspree.io/f/mgvgrdva" method="POST" id="pricing-request-form">
+
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+
+      <label>Your Business Email</label>
+      <input type="email" name="email" required>
+
+      <label>Select the Service You're Interested In</label>
+      <select name="service" required>
+        <option value="">Select...</option>
+        <option>SEO Blog Article</option>
+        <option>Brand Story / About Page</option>
+        <option>Full Website Copy</option>
+        <option>Monthly SEO Retainer</option>
+        <option>Brand Voice Development</option>
+        <option>Launch Copy</option>
+      </select>
+
+      <label>Additional Notes (optional)</label>
+      <input type="text" name="notes" placeholder="Tell me more…">
+
+      <button type="submit" class="submit-btn">Send Request</button>
+
+      <p id="success-msg" class="success-message" style="display:none;">
+        Your request has been sent — thank you!
+      </p>
+    </form>
+
+  </div>
+
+<script>
+  const form = document.getElementById('pricing-request-form');
+  const success = document.getElementById('success-msg');
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      success.style.display = "block";
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
