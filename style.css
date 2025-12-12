@@ -473,3 +473,91 @@ html {
 @view-transition {
   navigation: auto;
 }
+
+/* ================================
+   PORTFOLIO REQUEST PAGE STYLING
+================================ */
+
+.portfolio-request {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.portfolio-container {
+  max-width: 650px;
+  width: 100%;
+  text-align: left;
+}
+
+.portfolio-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.portfolio-container p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.portfolio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.portfolio-form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.portfolio-form input[type="email"] {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.portfolio-form input[type="email"]:focus {
+  border-color: #000;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #222;
+}
+
+.note {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 20px;
+}
