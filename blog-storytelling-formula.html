@@ -2,11 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Storytelling — From Formula to Narrative</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Blog Title — The Beauty Reaction</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-hero {
+      background: linear-gradient(to bottom, rgba(64,0,40,0.5), rgba(64,0,40,0.85)),
+                  url('your-blog-image.jpg') center/cover no-repeat;
+      padding: 8rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    .blog-body p {
+      margin-bottom: 1.6rem;
+      line-height: 1.9;
+      font-size: 1.15rem;
+    }
+    .breadcrumb {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.75;
+    }
+    .breadcrumb a {
+      color: #400028;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Storytelling — From Formula to Narrative</h1>
-  <p>Ovde će ići tvoj blog sadržaj...</p>
+
+<!-- BREADCRUMBS -->
+<div class="max-w-4xl mx-auto px-6 mt-6 breadcrumb">
+  <a href="index.html#blog">← Back to Insights</a>
+</div>
+
+<!-- HERO -->
+<header class="blog-hero">
+  <h1 class="text-4xl md:text-5xl font-serif mb-4">Blog Title Here</h1>
+  <p class="text-lg md:text-xl italic opacity-90">Blog subtitle or tagline here</p>
+  <p class="mt-4 text-sm opacity-80">Published: March 2025</p>
+</header>
+
+<!-- CONTENT -->
+<main class="max-w-4xl mx-auto px-6 py-12 blog-body">
+
+  <p>
+    Your full blog text goes here. Maintain paragraphs for readability, 
+    but the layout will automatically look elegant, balanced and luxurious.
+  </p>
+
+  <p>
+    Use this space to explain ideas in depth, share insights, educate, 
+    inspire or guide your ideal beauty industry client. The typography 
+    is optimized for a luxury reading experience.
+  </p>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center">
+  <p class="opacity-70">© 2025 The Beauty Reaction — Every brand has a reaction.</p>
+</footer>
+
 </body>
 </html>
