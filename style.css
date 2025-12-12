@@ -583,3 +583,23 @@ html {
   border-radius: 30px;
 }
 
+.blog-card:nth-child(1) .blog-image {
+  background-image: url("blog1.jpg");
+}
+
+.blog-card:nth-child(2) .blog-image {
+  background-image: url("blog2.jpg");
+}
+
+.blog-card:nth-child(3) .blog-image {
+  background-image: url("blog3.jpg");
+}
+
+.blog-image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
