@@ -561,3 +561,25 @@ html {
   color: #444;
   margin-top: 20px;
 }
+/* CTA BUTTON FOR PORTFOLIO */
+.cta-wrapper {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.cta-portfolio {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.cta-portfolio:hover {
+  background: #222;
+}
+
