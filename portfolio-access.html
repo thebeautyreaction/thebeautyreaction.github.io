@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Request – The Beauty Reaction</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Additional minimal styling for this private page */
+    .portfolio-wrapper {
+      max-width: 600px;
+      margin: 8rem auto;
+      background: white;
+      padding: 3rem;
+      border: 1px solid rgba(64, 1, 40, 0.1);
+      box-shadow: 0 10px 40px rgba(64,1,40,0.1);
+    }
+
+    .portfolio-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #400128;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .portfolio-wrapper p {
+      font-size: 1rem;
+      color: #400128;
+      opacity: 0.85;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    label {
+      font-size: 0.95rem;
+      color: #400128;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid rgba(64, 1, 40, 0.4);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: #400128;
+      color: #ececec;
+      border: 2px solid #400128;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #efd91d;
+      color: #400128;
+      border-color: #efd91d;
+    }
+
+    .success-message {
+      text-align: center;
+      color: #400128;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="portfolio-wrapper">
+
+    <h2>Request My Portfolio</h2>
+
+    <p>
+      Share your best business email, and I’ll send you a curated selection of my work.<br><br>
+      I share my portfolio personally to protect the originality of my work and ensure it reaches brands who truly value authentic storytelling.
+    </p>
+
+    <!-- FORM     -->
+    <form action="https://formspree.io/f/xanrapkp" method="POST" id="portfolio-form">
+
+      <label for="email">Your Business Email:</label>
+      <input 
+        type="email" 
+        name="email" 
+        id="email"
+        placeholder="example@company.com"
+        required
+      >
+
+      <label class="flex items-center gap-2 mt-3 mb-4">
+        <input type="checkbox" name="consent" required>
+        <span>I consent to sharing my email to receive your portfolio.</span>
+      </label>
+
+      <button type="submit" class="submit-btn">Send Request</button>
+
+      <p class="success-message" id="success-msg" style="display:none;">
+        Thank you — your request has been sent!
+      </p>
+
+    </form>
+  </div>
+
+<script>
+  const form = document.getElementById('portfolio-form');
+  const success = document.getElementById('success-msg');
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault(); // prevent refresh
+
+    const data = new FormData(form);
+    const action = form.action;
+
+    const response = await fetch(action, {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      success.style.display = "block";
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
