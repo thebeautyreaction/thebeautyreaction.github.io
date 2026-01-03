@@ -133,13 +133,7 @@ font-family: 'Playfair Display', serif
   max-width: 700px;
   margin: 0 auto 3rem;
   line-height: 1.7;
-  opacity: 0.8;
-   @media (max-width: 768px) {
-  .hero-subtitle {
-    text-align: left;
-    font-size: 0.95rem;
-  }
-
+  opacity: 0.8
 }
 
 .cta-button {
