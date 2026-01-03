@@ -124,12 +124,16 @@ nav {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem; /* manji i elegantniji */
   color: #400128;
-  max-width: 700px;
+  max-width: 680px;
   margin: 0 auto 3rem;
-  line-height: 1.8;
-  opacity: 0.8;
+  line-height: 1.7;
+  opacity: 0.85;
+  text-align: justify; /* poravnanje sa obe strane */
+  text-justify: inter-word;
+  letter-spacing: 0.01em;
 }
 
 .cta-button {
