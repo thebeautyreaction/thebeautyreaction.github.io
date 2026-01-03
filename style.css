@@ -109,14 +109,13 @@ nav {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
-  font-weight: 450;
+  font-weight: 600;
   color: #400128;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
 .tagline {
-  font-family: 'Playfair Display', serif
   font-size: 1.4rem;
   color: #c1979d;
   font-weight: 300;
@@ -125,14 +124,11 @@ nav {
 }
 
 .hero-subtitle {
-font-family: 'Playfair Display', serif
-  font-size: 0.95rem;
-   letter-spacing: 0.01em;
+  font-size: 1.1rem;
   color: #400128;
-   text-justify: inter-word;
   max-width: 700px;
   margin: 0 auto 3rem;
-  line-height: 1.7;
+  line-height: 1.8;
   opacity: 0.8
 }
 
