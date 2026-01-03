@@ -109,13 +109,14 @@ nav {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
-  font-weight: 600;
+  font-weight: 450;
   color: #400128;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
 .tagline {
+  font-family: 'Playfair Display', serif
   font-size: 1.4rem;
   color: #c1979d;
   font-weight: 300;
@@ -124,12 +125,21 @@ nav {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+font-family: 'Playfair Display', serif
+  font-size: 0.95rem;
+   letter-spacing: 0.01em;
   color: #400128;
+   text-justify: inter-word;
   max-width: 700px;
   margin: 0 auto 3rem;
-  line-height: 1.8;
+  line-height: 1.7;
   opacity: 0.8;
+   @media (max-width: 768px) {
+  .hero-subtitle {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
 }
 
 .cta-button {
